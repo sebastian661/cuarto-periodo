@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ACTIVIDAD SEMANA 33</title>
+  <style>
+    .fondo{
+              width: 700px;
+              height: 310px;
+              top: 200px;
+              left: 200px;
+              font-size: 85px;
+              background-color:#9FF63D ;
+              color: white;
+              border: solid;
+              border-color: black;
+              border-radius: 10px;
+        }
+
+    .boto{
+      position: absolute;
+top: 250px;
+left: 800px;
+height:60px;
+width:200px;
+background-color:#57C414;
+color: black;
+align-content: center;
+    }
+    .boto1{
+      position: absolute;
+top: 250px;
+left: 350px;
+height:60px;
+width:400px;
+background-color:#F4FBEC;
+color: black;
+align-content: center;
+    }
+
+    .papitas{
+      position: absolute;
+top: 80px;
+left: 150px;
+height:50px;
+width:150px;
+background:white;
+color: black;
+align-content: center;
+
+    }
+
+    .chocolatina{
+      position: absolute;
+top: 100px;
+left: 150px;
+height:50px;
+width:150px;
+background:white;
+color: black;
+align-content: center;
+    }
+
+    .doritos{
+      position: absolute;
+top: 120px;
+left: 150px;
+height:50px;
+width:150px;
+background:white;
+color: black;
+align-content: center;
+    }
+
+    .producto1{
+      position: absolute;
+top: 100px;
+left: 400px;
+height:30px;
+width:150px;
+background: orange;
+    }
+
+    .producto2{
+      position: absolute;
+top: 100px;
+left: 600px;
+height:30px;
+width:150px;
+background-color:#75E9F7;
+    }
+
+    .producto3{
+position: absolute;
+top: 100px;
+left: 800px;
+height:30px;
+width:150px;
+background-color: #F7A275;
+    }
+
+        .producto4{
+position: absolute;
+top: 150px;
+left: 600px;
+height:30px;
+width:150px;
+background: yellow;
+    }
+
+</style>
+</head>
+<body>
+  <form>
+    <center><label>tienda de juana</label></center>
+    <div><input type="text" class="producto1" id="producto"placeholder="producto"></input></div>
+    <div><input type="text" id="cantidad" class="producto2" placeholder="cantidad"></input></div>
+    <div><input type="text" id="precio" class="producto3" placeholder="precio"></input></div>
+    <div><input type="text" id="dinero" class="producto4" placeholder="dinero"></input></div>
+    <div class="abuela"></div>
+    <center><div class="fondo"></div>
+  <div id="papita" class="papitas" id="papitas">papitas=3500</div>
+  <div id="chocolatin"  class="chocolatina " id="chocolatina">chocolatina=2500</div>
+  <div id="dorito"class="doritos" id="doritos">doritos=1500</div>
+  <div class="boto" onclick="calcu()">pulse aqui para ver su cuenta</div>
+  <div class="boto1" onclick="calcu()" id="sfsf"></div>
+  </form>
+  <script>
+
+    function calcu() {
+  x=(producto.value)
+  y=Number(cantidad.value)
+  z=Number(precio.value)
+  w=Number(dinero.value)
+
+  ct=10
+  cr=10
+  cc=10
+  if (x="producto") {
+    if (y<=ct) {
+      amino=y*z
+      resul=amino-w
+      sfsf.innerHTML="compraste:"+ y +" y tiens que pagar:"+amino
+}
+if (y<=cr) {
+      amino=y*z
+      resul=amino-w
+      sfsf.innerHTML="compraste:"+ y +" y tienes que pagar:"+amino
+}
+if (y<=cc) {
+      amino=y*z
+      resul=amino-w
+      sfsf.innerHTML="compraste:"+ y +" y tienes que pagar:"+amino+"y tu devuelta es"+resul
+}
+
+    }
+  }
+  </script>
+
+</body>
+</html>
